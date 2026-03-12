@@ -51,6 +51,11 @@ public class BubbleFrame extends JFrame {
                 // 방향키 코드를 Player 의 이동 메서드로 연결
                 switch (e.getKeyCode()) {
                     case KeyEvent.VK_LEFT :
+                        player.left();
+                        break;  case KeyEvent.VK_RIGHT :
+                        player.right();
+                        break;  case KeyEvent.VK_UP :
+                        player.up();
                         break;
                 }
             }
